@@ -2,9 +2,19 @@
 CrystalOS - Made by PacksGamingHD
 */
 
+/** Code Guide
+ * lcd.print(""); - Print a message to the LCD
+ * delay() - What number you put there, it will delay the code *IMPORTANT - YOU MUST PUT THIS AFTER EVERYTIME YOU WANT TO PUT SOMETHING NEW*
+ * lcd.clear(); - Clears the LCD
+ * if (button1State == LOW) - When you push button 1 then it will do what you put in the code
+ * lcd.setCursor(0,0); - Sets the cursor to the first line
+ * lcd.setCursor(0,1); - Sets the cursor to the second line
+ * Find all of the commands here: http://arduino.cc/en/Reference/LiquidCrystal
+*/
+
 #include <LiquidCrystal.h>
 LiquidCrystal lcd(12,11,5,4,3,2);
-const int button1Pin = 7;  // pushbutton 1 pin
+const int button1Pin = 7;
 const int button2Pin = 8;
 int count = 0;
 void setup()
@@ -66,5 +76,21 @@ if (button2State == LOW)
   lcd.setCursor(0,1);
   lcd.print("if you use it");
   delay(2000);
+  lcd.setCursor(0,0);
+  lcd.clear();
+  lcd.print("Updates:");
+  lcd.setCursor(0,1);
+  lcd.print("- Add updates");
+  delay(2000);
+  lcd.setCursor(0,0);
+  lcd.clear();
+  lcd.print("On GitHub");
+  lcd.setCursor(0,1);
+  lcd.print("- Updates to OS");
+  delay(2000);
+  lcd.setCursor(0,0);
+  lcd.clear();
+  lcd.print("- Shorten stuff");
+  lcd.print("- Create OS")
 }
 }
