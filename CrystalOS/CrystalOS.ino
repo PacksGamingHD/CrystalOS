@@ -1,28 +1,16 @@
+/*
+CrystalOS - Made by PacksGamingHD
+*/
+
 #include <LiquidCrystal.h>
-
-// Initialize the library with the pins we're using.
-// (Note that you can use different pins if needed.)
-// See http://arduino.cc/en/Reference/LiquidCrystal
-// for more information:
-
 LiquidCrystal lcd(12,11,5,4,3,2);
 const int button1Pin = 7;  // pushbutton 1 pin
 const int button2Pin = 8;
 int count = 0;
 void setup()
 {
-  // The LiquidCrystal library can be used with many different
-  // LCD sizes. We're using one that's 2 lines of 16 characters,
-  // so we'll inform the library of that:
   pinMode(button1Pin, INPUT);
   lcd.begin(16, 2);
-
-  // Data sent to the display will stay there until it's
-  // overwritten or power is removed. This can be a problem
-  // when you upload a new sketch to the Arduino but old data
-  // remains on the display. Let's clear the LCD using the
-  // clear() command from the LiquidCrystal library:
-
   lcd.clear();
 }
 
