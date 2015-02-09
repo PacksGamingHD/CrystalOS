@@ -116,13 +116,14 @@ if (button2State == LOW)
   start;
   lcd.print("Updates:");
   lcd.setCursor(0,1);
-  lcd.print("- Add updates");
+  lcd.print("Add tempature");
   start;
-  lcd.print("On GitHub");
+  lcd.print("Clean code");
   lcd.setCursor(0,1);
-  lcd.print("- Updates to OS");
+  lcd.print("- Added to Github");
   start;
-  lcd.print("- Shorten stuff");
-  lcd.print("- Create OS");
+  lcd.print("- Updates to OS");
+  lcd.setCursor(0,1);
+  lcd.print("Created OS");
 }
 }
