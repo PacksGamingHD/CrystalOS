@@ -80,10 +80,6 @@ lcd.setCursor(0,0);
 lcd.print("CrystalOS - v2.0");
 lcd.setCursor(0,1);
 lcd.print("Blue = Tempature");
-lcd.setCursor(0,1);
-delay(1000);
-lcd.print("lue = Tempature");
-delay(1000);
 if (button1State == LOW) // If button 1 is pressed then tell the tempature
 {
   lcd.setCursor(0,0);
@@ -91,11 +87,11 @@ if (button1State == LOW) // If button 1 is pressed then tell the tempature
   lcd.print("Voltage ");
   lcd.setCursor(0,1);
   lcd.print(voltage);
-  start;
+  start();
   lcd.print("Celsius");
   lcd.setCursor(0,1);
   lcd.print(degreesC);
-  start;
+  start();
   lcd.print("Fahrenheit");
   lcd.setCursor(0,1);
   lcd.print(degreesF);
@@ -108,24 +104,22 @@ if (button2State == LOW) // If button 2 is pressed then print info
   lcd.print("CrystalOS - v2.0");
   lcd.setCursor(0,1);
   lcd.print("Made by Sammy");
-  start;
+  start();
   lcd.print("j.mp/crystalos");
   lcd.setCursor(0,1);
   lcd.print("Public on GitHub");
-  start;
-  lcd.print("Thanks for");
-  lcd.setCursor(0,1);
-  lcd.print("using");
-  start;
+  start();
+  lcd.print("Thanks for using");
+  start();
   lcd.print("Updates:");
   lcd.setCursor(0,1);
   lcd.print("Add tempature");
-  start;
+  start();
   lcd.print("Clean code");
   lcd.setCursor(0,1);
-  lcd.print("- Added to Github");
-  start;
-  lcd.print("- Updates to OS");
+  lcd.print("Added to Github");
+  start();
+  lcd.print("Updates to OS");
   lcd.setCursor(0,1);
   lcd.print("Created OS");
 }
