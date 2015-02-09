@@ -10,31 +10,31 @@ CrystalOS - Made by PacksGamingHD
  * lcd.setCursor(0,1); - Sets the cursor to the second line
  * Find all of the commands here: http://arduino.cc/en/Reference/LiquidCrystal
 */
-#include <LiquidCrystal.h>
-LiquidCrystal lcd(12,11,5,4,3,2);
-const int button1Pin = 7;
-const int button2Pin = 8;
-const int temperaturePin = 0;
-int count = 0;
-void start()
+#include <LiquidCrystal.h> // Include the LiquidCrystal libraries 
+LiquidCrystal lcd(12,11,5,4,3,2); // Define the pins
+const int button1Pin = 7; // This is button 1
+const int button2Pin = 8; // This is button 2
+const int temperaturePin = 0; // This is the pin the tempature sensor uses
+void start() // This delays two seconds, set the cursor to the first line and clears the LCD
 {
   delay(2000);
   lcd.setCursor(0,0);
   lcd.clear();
 }
-void start1()
+void start1() // Same as above but it sets the cursor to the second line
 {
   delay(2000);
   lcd.setCursor(0,1);
   lcd.clear();
 } 
-void setup()
+void setup() // Setup code
 {
 pinMode(button1Pin, INPUT);
   lcd.begin(16, 2);
   lcd.clear();
   Serial.begin(9600);
   lcd.setCursor(0,0);
+  // Below is the code that displays when you plug it in or reset the Arduino
 lcd.print("O");
 lcd.setCursor(0,1);
 lcd.print("Starting up");
@@ -62,11 +62,11 @@ lcd.print("Loading /buttons");
 delay(2500);
 lcd.clear();
 }
-float getVoltage(int pin)
+float getVoltage(int pin) // For the tempature sensor
 {
   return (analogRead(pin) * 0.004882814);
 }
-void loop()
+void loop() // This is the main code
 {
 int button1State;
 button1State = digitalRead(button1Pin);
@@ -79,9 +79,12 @@ degreesF = degreesC * (9.0/5.0) + 32.0;
 lcd.setCursor(0,0);
 lcd.print("CrystalOS - v2.0");
 lcd.setCursor(0,1);
-lcd.print("Blue = Temp");
+lcd.print("Blue = Tempature");
+lcd.setCursor(0,1);
 delay(1000);
-if (button1State == LOW)
+lcd.print("lue = Tempature");
+delay(1000);
+if (button1State == LOW) // If button 1 is pressed then tell the tempature
 {
   lcd.setCursor(0,0);
   lcd.clear();
@@ -98,7 +101,7 @@ if (button1State == LOW)
   lcd.print(degreesF);
   delay(2000);
 }
-if (button2State == LOW)
+if (button2State == LOW) // If button 2 is pressed then print info
 {
   lcd.clear();
   lcd.setCursor(0,0);
