@@ -3,7 +3,7 @@ CrystalOS - Made by PacksGamingHD
 */
 /** Code Guide
  * lcd.print(""); - Print a message to the LCD
- * delay() - What number you put there, it will delay the code *IMPORTANT - YOU MUST PUT THIS AFTER EVERYTIME YOU WANT TO PUT SOMETHING NEW*
+ * delay() - What number you put there, it will delay the code *IMPORTANT - YOU MUST PUT THIS AFTER YOU FINISH THE SECOND LINE OR YOU WONT SEE IT*
  * lcd.clear(); - Clears the LCD
  * if (button1State == LOW) - When you push button 1 then it will do what you put in the code
  * lcd.setCursor(0,0); - Sets the cursor to the first line
