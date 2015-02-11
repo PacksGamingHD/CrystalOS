@@ -8,6 +8,7 @@ CrystalOS - Made by PacksGamingHD
  * if (button1State == LOW) - When you push button 1 then it will do what you put in the code
  * lcd.setCursor(0,0); - Sets the cursor to the first line
  * lcd.setCursor(0,1); - Sets the cursor to the second line
+ * start(); - Delays 2000, sets the cursor to the first line and clear the LCD
  * Find all of the commands here: http://arduino.cc/en/Reference/LiquidCrystal
 */
 #include <LiquidCrystal.h> // Include the LiquidCrystal libraries 
@@ -26,13 +27,14 @@ void start1() // Same as above but it sets the cursor to the second line
   delay(2000);
   lcd.setCursor(0,1);
   lcd.clear();
-} 
+}
 void setup() // Setup code
 {
 pinMode(button1Pin, INPUT);
   lcd.begin(16, 2);
   lcd.clear();
   Serial.begin(9600);
+  Serial.begin(14400);
   lcd.setCursor(0,0);
   // Below is the code that displays when you plug it in or reset the Arduino
 lcd.print("O");
@@ -77,7 +79,7 @@ voltage = getVoltage(temperaturePin);
 degreesC = (voltage - 0.5) * 100.0;
 degreesF = degreesC * (9.0/5.0) + 32.0;
 lcd.setCursor(0,0);
-lcd.print("CrystalOS - v2.0");
+lcd.print("CrystalOS - v3.0");
 lcd.setCursor(0,1);
 lcd.print("Blue = Tempature");
 if (button1State == LOW) // If button 1 is pressed then tell the tempature
@@ -112,7 +114,10 @@ if (button2State == LOW) // If button 2 is pressed then print info
   lcd.print("Thanks for using");
   start();
   lcd.print("Updates:");
-  lcd.setCursor(0,1);
+  lcd.setCursor(0,0);
+  lcd.clear();
+  lcd.print("Change to 3.0");
+  lcd.setCursor(0,1); 
   lcd.print("Add tempature");
   start();
   lcd.print("Clean code");
