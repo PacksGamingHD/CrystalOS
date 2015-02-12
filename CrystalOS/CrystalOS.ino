@@ -11,7 +11,7 @@ CrystalOS - Made by PacksGamingHD
  * start(); - Delays 2000, sets the cursor to the first line and clear the LCD
  * Find all of the commands here: http://arduino.cc/en/Reference/LiquidCrystal
 */
-#include <LiquidCrystal.h> // Include the LiquidCrystal libraries 
+#include <LiquidCrystal.h> // Include the LiquidCrystal library 
 LiquidCrystal lcd(12,11,5,4,3,2); // Define the pins
 const int button1Pin = 7; // This is button 1
 const int button2Pin = 8; // This is button 2
