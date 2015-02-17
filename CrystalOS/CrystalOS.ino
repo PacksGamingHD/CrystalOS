@@ -103,37 +103,37 @@ if (button1State == LOW) // If button 1 is pressed then tell the tempature
   lcd.print(degreesC); // Print degreesC to LCD
   start(); // Run function start
   lcd.print("Fahrenheit"); // Print to LCD
-  lcd.setCursor(0,1); // Set cursor to second line
+  line2(); // Run function line2
   lcd.print(degreesF); // Print degreesF to LCD
   delay(2000); // Delay 2000
 }
 if (button2State == LOW) // If button 2 is pressed then print info
 {
   lcd.clear(); // Clear LCD
-  lcd.setCursor(0,0); // Set cursor to first line
+  line1(); // Run function line1
   lcd.print("CrystalOS - v3.0"); // Print to LCD
-  lcd.setCursor(0,1); // Set cursor to second line
+  line2(); // Run function line2
   lcd.print("Made by Sammy"); // Print to LCD
   start(); // Run function start
   lcd.print("j.mp/crystalos"); // Print to LCD
-  lcd.setCursor(0,1); // Set cursor to second line
+  line2(); // Run function line2
   lcd.print("Public on GitHub"); // Print to LCD
   start(); // Run function start
   lcd.print("Thanks for using"); // Print to LCD
   start(); // Run function start
   lcd.print("Updates:"); // Print to LCD
-  lcd.setCursor(0,0); // Set cursor to first line
+  line1(); // Run function line1
   lcd.clear(); // Clear LCD
   lcd.print("Change to 3.0"); // Print to LCD
-  lcd.setCursor(0,1); // Set cursor to second line
+  line2(); // Run function line2();
   lcd.print("Add tempature"); // Print to LCD
   start(); // Run function start
   lcd.print("Clean code"); // Print to LCD
-  lcd.setCursor(0,1); // Set cursor to second line
+  line2(); // Run function line2
   lcd.print("Added to Github"); // Print to LCD
   start(); // Run function start
   lcd.print("Updates to OS"); // Print to LCD
-  lcd.setCursor(0,1); // Set cursor to second line
+  line2(); // Run function line2
   lcd.print("Created OS"); // Print to LCD
 }
 }
