@@ -33,13 +33,13 @@ void boot1() // Delay 1500 then set LCD to first line
   delay(1500); // Delay 1500
   lcd.setCursor(0,0); // Set cursor to first line
 }
-void line1();
+void line1(); // Define line1
 {
-  lcd.setCursor(0,0);
+  lcd.setCursor(0,0); // Set the cursor to first line
 }
-void line2()
+void line2() // Define line2
 {
-  lcd.setCursor(0,1);
+  lcd.setCursor(0,1); // Set the cursor to the second line
 }
 void setup() // Setup code
 {
@@ -100,40 +100,40 @@ if (button1State == LOW) // If button 1 is pressed then tell the tempature
   start(); // Run function start
   lcd.print("Celsius"); // Print to LCD
   line2(); // Run function line2
-  lcd.print(degreesC);
-  start();
-  lcd.print("Fahrenheit");
-  lcd.setCursor(0,1);
-  lcd.print(degreesF);
-  delay(2000);
+  lcd.print(degreesC); // Print degreesC to LCD
+  start(); // Run function start
+  lcd.print("Fahrenheit"); // Print to LCD
+  lcd.setCursor(0,1); // Set cursor to second line
+  lcd.print(degreesF); // Print degreesF to LCD
+  delay(2000); // Delay 2000
 }
 if (button2State == LOW) // If button 2 is pressed then print info
 {
-  lcd.clear();
-  lcd.setCursor(0,0);
-  lcd.print("CrystalOS - v2.0");
-  lcd.setCursor(0,1);
-  lcd.print("Made by Sammy");
-  start();
-  lcd.print("j.mp/crystalos");
-  lcd.setCursor(0,1);
-  lcd.print("Public on GitHub");
-  start();
-  lcd.print("Thanks for using");
-  start();
-  lcd.print("Updates:");
-  lcd.setCursor(0,0);
-  lcd.clear();
-  lcd.print("Change to 3.0");
-  lcd.setCursor(0,1); 
-  lcd.print("Add tempature");
-  start();
-  lcd.print("Clean code");
-  lcd.setCursor(0,1);
-  lcd.print("Added to Github");
-  start();
-  lcd.print("Updates to OS");
-  lcd.setCursor(0,1);
-  lcd.print("Created OS");
+  lcd.clear(); // Clear LCD
+  lcd.setCursor(0,0); // Set cursor to first line
+  lcd.print("CrystalOS - v3.0"); // Print to LCD
+  lcd.setCursor(0,1); // Set cursor to second line
+  lcd.print("Made by Sammy"); // Print to LCD
+  start(); // Run function start
+  lcd.print("j.mp/crystalos"); // Print to LCD
+  lcd.setCursor(0,1); // Set cursor to second line
+  lcd.print("Public on GitHub"); // Print to LCD
+  start(); // Run function start
+  lcd.print("Thanks for using"); // Print to LCD
+  start(); // Run function start
+  lcd.print("Updates:"); // Print to LCD
+  lcd.setCursor(0,0); // Set cursor to first line
+  lcd.clear(); // Clear LCD
+  lcd.print("Change to 3.0"); // Print to LCD
+  lcd.setCursor(0,1); // Set cursor to second line
+  lcd.print("Add tempature"); // Print to LCD
+  start(); // Run function start
+  lcd.print("Clean code"); // Print to LCD
+  lcd.setCursor(0,1); // Set cursor to second line
+  lcd.print("Added to Github"); // Print to LCD
+  start(); // Run function start
+  lcd.print("Updates to OS"); // Print to LCD
+  lcd.setCursor(0,1); // Set cursor to second line
+  lcd.print("Created OS"); // Print to LCD
 }
 }
