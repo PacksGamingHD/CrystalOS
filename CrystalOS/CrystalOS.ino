@@ -59,16 +59,16 @@ lcd.print("Loading /home"); // Print to LCD
 boot1(); // Run function boot1
 lcd.print("O O O"); // Print to LCD
 line2();// Run function line2
-lcd.print("Loading /temp"); // Print to LCD
+lcd.print("Loading /sys"); // Print to LCD
 boot1(); // Run function boot1
 lcd.clear(); // Clear LCD
 lcd.print("O O O O O O"); // Print to LCD
 line2(); // Run function line2
-lcd.print("Loading /txt"); // Print to LCD
+lcd.print("Loading /dev"); // Print to LCD
 boot1(); // Run function boot1
 lcd.print("O O O O O O O O"); // Print to LCD
 lien2(); // Run function line2
-lcd.print("Loading /buttons"); // Print to LCD
+lcd.print("Loading /xdf"); // Print to LCD
 delay(2500); // Delay 2500
 lcd.clear(); // Clear LCD
 }
