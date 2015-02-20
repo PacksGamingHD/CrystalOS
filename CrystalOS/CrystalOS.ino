@@ -1,5 +1,5 @@
 /*
-CrystalOS - Made by PacksGamingHD
+ArduOS - Made by PacksGamingHD
 */
 /** Code Guide
  * lcd.print(""); - Print a message to the LCD
@@ -111,7 +111,7 @@ if (button2State == LOW) // If button 2 is pressed then print info
 {
   lcd.clear(); // Clear LCD
   line1(); // Run function line1
-  lcd.print("CrystalOS - v3.0"); // Print to LCD
+  lcd.print("ArduOS - v4.0"); // Print to LCD
   line2(); // Run function line2
   lcd.print("Made by Sammy"); // Print to LCD
   start(); // Run function start
@@ -121,19 +121,23 @@ if (button2State == LOW) // If button 2 is pressed then print info
   start(); // Run function start
   lcd.print("Thanks for using"); // Print to LCD
   start(); // Run function start
-  lcd.print("Updates:"); // Print to LCD
-  line1(); // Run function line1
-  lcd.clear(); // Clear LCD
+  lcd.print("Updates"); // Print to LCD
+  line2(); // Run function line2
+  lcd.print("Change name"); // Print to LCD
+  start(); // Run function start
+  lcd.print("Code cleanup"); // Print to LCD
+  line2(); // Run function line2
   lcd.print("Change to 3.0"); // Print to LCD
-  line2(); // Run function line2();
+  start(); // Run function start
   lcd.print("Add tempature"); // Print to LCD
-  start(); // Run function start
+  line2(); // Run function line2
   lcd.print("Clean code"); // Print to LCD
-  line2(); // Run function line2
-  lcd.print("Added to Github"); // Print to LCD
   start(); // Run function start
-  lcd.print("Updates to OS"); // Print to LCD
+  lcd.print("Added to GitHub"); // Print to LCD
   line2(); // Run function line2
-  lcd.print("Created OS"); // Print to LCD
+  lcd.print("Updates to OS"); // Print to LCD
+  start(); // Run function start
+  lcd.print("Create OS"); // Print to LCD
+  delay(2000); // Delay 2000
 }
 }
