@@ -7,6 +7,7 @@ WARNING: THIS HAS NOT BEEN TESTED
  * delay() - What number you put there, it will delay the code *IMPORTANT - YOU MUST PUT THIS AFTER YOU FINISH THE SECOND LINE OR YOU WONT SEE IT*
  * lcd.clear(); - Clears the LCD
  * if (button1State == LOW) - When you push button 1 then it will do what you put in the code
+ * if (button2State == LOW) - When you push button 2 then it will do what you put in the code
  * lcd.setCursor(0,0); - Sets the cursor to the first line
  * lcd.setCursor(0,1); - Sets the cursor to the second line
  * start(); - Delays 2000, sets the cursor to the first line and clear the LCD
