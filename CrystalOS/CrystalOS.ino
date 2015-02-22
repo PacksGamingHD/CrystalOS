@@ -51,10 +51,10 @@ void setup() // Setup code
 {
 pinMode(button1Pin, INPUT); // Button 1
 pinMode(button2Pin, INPUT); // Button 2
-  lcd.begin(16, 2); // 16 charachters on 2 lines
-  lcd.clear(); // Clear LCD
-  lcd.setCursor(0,0); // Set cursor to first line
-  // Below is the code that displays when you plug it in or reset the Arduino
+lcd.begin(16, 2); // 16 charachters on 2 lines
+lcd.clear(); // Clear LCD
+lcd.setCursor(0,0); // Set cursor to first line
+// Below is the code that displays when you plug it in or reset the Arduino
 lcd.print("O"); // Print to LCD
 lcd.setCursor(0,1); // Set cursor to second line
 lcd.print("Starting up"); // Print to LCD
