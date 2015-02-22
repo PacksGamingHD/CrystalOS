@@ -1,6 +1,5 @@
 /*
 ArduinoOS - Made by PacksGamingHD
-WARNING: THIS HAS NOT BEEN TESTED
 */
 /** Code Guide
  * lcd.print(""); - Print a message to the LCD
@@ -39,7 +38,7 @@ void boot1() // Delay 1500 then set LCD to first line
   delay(1500); // Delay 1500
   lcd.setCursor(0,0); // Set cursor to first line
 }
-void line1(); // Define line1
+void line1() // Define line1
 {
   lcd.setCursor(0,0); // Set the cursor to first line
 }
