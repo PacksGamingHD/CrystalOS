@@ -1,5 +1,6 @@
 /*
-ArduOS - Made by PacksGamingHD
+ArduinoOS - Made by PacksGamingHD
+WARNING: THIS HAS NOT BEEN TESTED
 */
 /** Code Guide
  * lcd.print(""); - Print a message to the LCD
@@ -9,6 +10,10 @@ ArduOS - Made by PacksGamingHD
  * lcd.setCursor(0,0); - Sets the cursor to the first line
  * lcd.setCursor(0,1); - Sets the cursor to the second line
  * start(); - Delays 2000, sets the cursor to the first line and clear the LCD
+ * start1(); - Delays 2000, sets the cursor to the second line and clear the LCD
+ * line1(); - Set the cursor to the first line
+ * line2(); - Set the cursor to the second line
+ * boot1() - Delay 1500 then set LCD to first line
  * Find all of the commands here: http://arduino.cc/en/Reference/LiquidCrystal
 */
 #include <LiquidCrystal.h> // Include the LiquidCrystal library 
@@ -67,8 +72,10 @@ line2(); // Run function line2
 lcd.print("Loading /dev"); // Print to LCD
 boot1(); // Run function boot1
 lcd.print("O O O O O O O O"); // Print to LCD
-lien2(); // Run function line2
+line2(); // Run function line2
 lcd.print("Loading /xdf"); // Print to LCD
+boot1(); // Run function boot1
+lcd.print("Welcome to ArduinoOS"); // Print to LCD
 delay(2500); // Delay 2500
 lcd.clear(); // Clear LCD
 }
@@ -87,14 +94,14 @@ voltage = getVoltage(temperaturePin); // Tells what voltage is
 degreesC = (voltage - 0.5) * 100.0; // Tells what the tempature can be
 degreesF = degreesC * (9.0/5.0) + 32.0; // Convert tempature
 line1(); // Run function line1
-lcd.print("CrystalOS - v3.0"); // Print to LCD
+lcd.print("ArduinoOS - v4.0"); // Print to LCD
 line2(); // Run function line2
 lcd.print("Blue = Tempature"); // Print to LCD
 if (button1State == LOW) // If button 1 is pressed then tell the tempature
 {
   line1(); // Run function line1
   lcd.clear(); // Clear LCD
-  lcd.print("Voltage "); // Print to LCD
+  lcd.print("Voltage"); // Print to LCD
   line2(); // Run function line2
   lcd.print(voltage); // Print voltage to LCD
   start(); // Run function start
@@ -111,7 +118,7 @@ if (button2State == LOW) // If button 2 is pressed then print info
 {
   lcd.clear(); // Clear LCD
   line1(); // Run function line1
-  lcd.print("ArduOS - v4.0"); // Print to LCD
+  lcd.print("ArduinoOS - v4.0"); // Print to LCD
   line2(); // Run function line2
   lcd.print("Made by Sammy"); // Print to LCD
   start(); // Run function start
