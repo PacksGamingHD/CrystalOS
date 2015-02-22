@@ -6,4 +6,5 @@ Instructions for connecting the buttons (be sure to use pins 6 and 7 and not 2 a
 Authors
 -------
 <a href=https://github.com/PacksGamingHD</a>@PacksGamingHD
-<a href=https://github.com/avinoam96</a>@avinoam96
+<br>
+<a href=https://github.com/avinoam98</a>@avinoam98
