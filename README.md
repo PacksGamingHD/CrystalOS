@@ -5,6 +5,6 @@ Instructions for connecting the LCD: https://cdn.sparkfun.com/assets/learn_tutor
 Instructions for connecting the buttons (be sure to use pins 6 and 7 and not 2 and 3. Also remove the LED and the resistor and jumper cable next to it https://cdn.sparkfun.com/assets/learn_tutorials/3/1/0/Arduino_circuit_05_01.png
 Authors
 -------
-<a href=https://github.com/PacksGamingHD</a>@PacksGamingHD
+<a href=https://github.com/PacksGamingHD @PacksGamingHD</a>
 <br>
 <a href=https://github.com/avinoam98</a>@avinoam98
