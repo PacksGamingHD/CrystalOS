@@ -127,24 +127,6 @@ if (button2State == LOW) // If button 2 is pressed then print info
   lcd.print("Public on GitHub"); // Print to LCD
   start(); // Run function start
   lcd.print("Thanks for using"); // Print to LCD
-  start(); // Run function start
-  lcd.print("Updates"); // Print to LCD
-  line2(); // Run function line2
-  lcd.print("Change name"); // Print to LCD
-  start(); // Run function start
-  lcd.print("Code cleanup"); // Print to LCD
-  line2(); // Run function line2
-  lcd.print("Change to 3.0"); // Print to LCD
-  start(); // Run function start
-  lcd.print("Add tempature"); // Print to LCD
-  line2(); // Run function line2
-  lcd.print("Clean code"); // Print to LCD
-  start(); // Run function start
-  lcd.print("Added to GitHub"); // Print to LCD
-  line2(); // Run function line2
-  lcd.print("Updates to OS"); // Print to LCD
-  start(); // Run function start
-  lcd.print("Create OS"); // Print to LCD
   delay(2000); // Delay 2000
 }
 }
