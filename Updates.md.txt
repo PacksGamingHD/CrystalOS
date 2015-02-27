@@ -1,0 +1,10 @@
+Updates:
+- Change GitHub repo name
+- Change name
+- Code cleanup
+- Change to 3.0
+- Add temperature
+- Clean code
+- Added to GitHub
+- Updates to OS
+- Create OS
