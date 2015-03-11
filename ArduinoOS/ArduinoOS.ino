@@ -73,7 +73,8 @@ lcd.print("Loading /dev"); // Print to LCD
 boot1(); // Run function boot1
 lcd.print("O O O O O O O O"); // Print to LCD
 line2(); // Run function line2
-lcd.print("Loading /xdf"); // Print to LCD
+lcd.clear(); // Clear LCD
+lcd.print("Loading /os"); // Print to LCD
 boot1(); // Run function boot1
 lcd.print("Welcome to ArduinoOS"); // Print to LCD
 delay(2500); // Delay 2500
@@ -122,11 +123,13 @@ if (button2State == LOW) // If button 2 is pressed then print info
   line2(); // Run function line2
   lcd.print("Made by Sammy"); // Print to LCD
   start(); // Run function start
-  lcd.print("j.mp/crystalos"); // Print to LCD
+  lcd.print("j.mp/OSArduino"); // Print to LCD
   line2(); // Run function line2
   lcd.print("Public on GitHub"); // Print to LCD
   start(); // Run function start
   lcd.print("Thanks for using"); // Print to LCD
   delay(2000); // Delay 2000
+  line2(); // Run function line2
+  lcd.print("Updated 3/11/15")
 }
 }
