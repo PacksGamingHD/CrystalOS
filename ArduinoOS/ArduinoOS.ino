@@ -1,7 +1,8 @@
 /*
-ArduinoOS - Made by PacksGamingHD
+ArduinoOS - Made by PacksGamingHD at www.github.com/PacksGamingHD
 */
-/** Code Guide
+/** INFORMATION 
+ * Code Guide
  * lcd.print(""); - Print a message to the LCD
  * delay() - What number you put there, it will delay the code *IMPORTANT - YOU MUST PUT THIS AFTER YOU FINISH THE SECOND LINE OR YOU WONT SEE IT*
  * lcd.clear(); - Clears the LCD
@@ -14,7 +15,15 @@ ArduinoOS - Made by PacksGamingHD
  * line1(); - Set the cursor to the first line
  * line2(); - Set the cursor to the second line
  * boot1() - Delay 1500 then set LCD to first line
+ * Other Resources:
  * Find all of the commands here: http://arduino.cc/en/Reference/LiquidCrystal
+ * More info at http://arduino.cc/en/Reference/HomePage for all of the Arduino commandsD
+ * Download the Arduino software (and FTDI drivers needed) at http://arduino.cc/en/Main/Software
+ * Verson: 1.6.1 recommended
+ * Other Info:
+ * Built for: Arduino Uno
+ * Language: C++
+ * You may freely contribute to the project
 */
 #include <LiquidCrystal.h> // Include the LiquidCrystal library 
 LiquidCrystal lcd(12,11,5,4,3,2); // Define the pins
@@ -74,7 +83,7 @@ boot1(); // Run function boot1
 lcd.print("O O O O O O O O"); // Print to LCD
 line2(); // Run function line2
 lcd.clear(); // Clear LCD
-lcd.print("Loading /os"); // Print to LCD
+lcd.print("Loading /etc"); // Print to LCD
 boot1(); // Run function boot1
 lcd.print("Welcome to ArduinoOS"); // Print to LCD
 delay(2500); // Delay 2500
@@ -95,7 +104,7 @@ voltage = getVoltage(temperaturePin); // Tells what voltage is
 degreesC = (voltage - 0.5) * 100.0; // Tells what the tempature can be
 degreesF = degreesC * (9.0/5.0) + 32.0; // Convert tempature
 line1(); // Run function line1
-lcd.print("ArduinoOS - v4.0"); // Print to LCD
+lcd.print("ArduinoOS - v4.1"); // Print to LCD
 line2(); // Run function line2
 lcd.print("Blue = Tempature"); // Print to LCD
 if (button1State == LOW) // If button 1 is pressed then tell the tempature
@@ -119,7 +128,7 @@ if (button2State == LOW) // If button 2 is pressed then print info
 {
   lcd.clear(); // Clear LCD
   line1(); // Run function line1
-  lcd.print("ArduinoOS - v4.0"); // Print to LCD
+  lcd.print("ArduinoOS - v4.1"); // Print to LCD
   line2(); // Run function line2
   lcd.print("Made by Sammy"); // Print to LCD
   start(); // Run function start
@@ -130,6 +139,10 @@ if (button2State == LOW) // If button 2 is pressed then print info
   lcd.print("Thanks for using"); // Print to LCD
   delay(2000); // Delay 2000
   line2(); // Run function line2
-  lcd.print("Updated 3/11/15")
+  lcd.print("See updates.txt"); // Print to LCD
+  start(); // Run function start
+  lcd.print("For updates"); // Print to LCD
+  line2(); // Run function line2
+  lcd.print("Updated 3/13/15"); // Print to LCD
 }
 }
