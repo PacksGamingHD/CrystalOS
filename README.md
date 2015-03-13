@@ -1,3 +1,5 @@
+Note: This is still avalible to download and use however, this project is somewhat abandoned. If you have any issues please use the Issues tab.
+
 ArduinoOS
 =========
 ArduinoOS is for the Arduino Uno with the LCD connected and two buttons
