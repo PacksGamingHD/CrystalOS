@@ -1,6 +1,9 @@
 /*
 ArduinoOS - Made by PacksGamingHD at www.github.com/PacksGamingHD
 */
+
+// Tested on: 3/13/15 (13/3/15) Status: Works
+
 /** INFORMATION 
  * Code Guide
  * lcd.print(""); - Print a message to the LCD
