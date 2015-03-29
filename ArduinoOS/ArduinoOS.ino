@@ -20,13 +20,12 @@ ArduinoOS - Made by PacksGamingHD at www.github.com/PacksGamingHD
  * boot1() - Delay 1500 then set LCD to first line
  * Other Resources:
  * Find all of the commands here: http://arduino.cc/en/Reference/LiquidCrystal
- * More info at http://arduino.cc/en/Reference/HomePage for all of the Arduino commandsD
+ * More info at http://arduino.cc/en/Reference/HomePage for all of the Arduino commands
  * Download the Arduino software (and FTDI drivers needed) at http://arduino.cc/en/Main/Software
  * Verson: 1.6.1 recommended
  * Other Info:
  * Built for: Arduino Uno
  * Language: C++
- * You may freely contribute to the project
 */
 #include <LiquidCrystal.h> // Include the LiquidCrystal library 
 LiquidCrystal lcd(12,11,5,4,3,2); // Define the pins
@@ -133,7 +132,6 @@ if (button2State == LOW) // If button 2 is pressed then print info
   line1(); // Run function line1
   lcd.print("ArduinoOS - v4.1"); // Print to LCD
   line2(); // Run function line2
-  lcd.print("Made by Sammy"); // Print to LCD
   start(); // Run function start
   lcd.print("j.mp/OSArduino"); // Print to LCD
   line2(); // Run function line2
