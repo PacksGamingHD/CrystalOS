@@ -1,4 +1,6 @@
 Updates:
+- Set project to somewhat abandoned status
+- Minor enchancements
 - Change GitHub repo name
 - Change name
 - Code cleanup
