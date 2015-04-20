@@ -1,4 +1,4 @@
-Note: This is still avalible to download and use however, this project is somewhat abandoned. If you have any issues please use the Issues tab.
+Note: This is still avalible to download and use however, this project is fully abandoned. If you have any issues please use the Issues tab.
 
 ArduinoOS
 =========
