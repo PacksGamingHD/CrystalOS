@@ -58,13 +58,9 @@ void line2() // Define line2
 {
   lcd.setCursor(0,1); // Set the cursor to the second line
 }
-void setup() // Setup code
+void startup()
 {
-pinMode(button1Pin, INPUT); // Button 1
-pinMode(button2Pin, INPUT); // Button 2
-lcd.begin(16, 2); // 16 charachters on 2 lines
-lcd.clear(); // Clear LCD
-lcd.setCursor(0,0); // Set cursor to first line
+  lcd.setCursor(0,0); // Set cursor to first line
 // Below is the code that displays when you plug it in or reset the Arduino
 lcd.print("O"); // Print to LCD
 lcd.setCursor(0,1); // Set cursor to second line
@@ -89,8 +85,16 @@ lcd.clear(); // Clear LCD
 lcd.print("Loading /etc"); // Print to LCD
 boot1(); // Run function boot1
 lcd.print("Welcome to ArduinoOS"); // Print to LCD
+}
+void setup() // Setup code
+{
+pinMode(button1Pin, INPUT); // Button 1
+pinMode(button2Pin, INPUT); // Button 2
+lcd.begin(16, 2); // 16 charachters on 2 lines
+lcd.clear(); // Clear LCD
 delay(2500); // Delay 2500
 lcd.clear(); // Clear LCD
+startup();
 }
 float getVoltage(int pin) // For the tempature sensor
 {
