@@ -1,4 +1,5 @@
 Updates:
+- Put startup in seperate function
 - Set project to fully abandoned status
 - Set project to somewhat abandoned status
 - Minor enchancements
